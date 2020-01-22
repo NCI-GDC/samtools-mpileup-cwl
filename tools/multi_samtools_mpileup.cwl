@@ -59,4 +59,4 @@ outputs:
     outputBinding:
       glob: '*.mpileup'
 
-baseCommand: ['python', '/opt/multi_mpileup.py']
+baseCommand: ['python', '/opt/multi_samtools_mpileup.py']
