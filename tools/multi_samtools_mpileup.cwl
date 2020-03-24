@@ -5,7 +5,7 @@ requirements:
   - class: InlineJavascriptRequirement
   - class: ShellCommandRequirement
   - class: DockerRequirement
-    dockerPull: quay.io/ncigdc/multi_mpileup:1.1
+    dockerPull: quay.io/ncigdc/multi_mpileup:fa589da13fa88ae5bc848ed3cc307927ea65b3df
 doc: |
   Multithreading on samtools mpileup function.
 
