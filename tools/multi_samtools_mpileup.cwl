@@ -5,7 +5,7 @@ requirements:
   - class: InlineJavascriptRequirement
   - class: ShellCommandRequirement
   - class: DockerRequirement
-    dockerPull: quay.io/ncigdc/multi_mpileup:fa589da13fa88ae5bc848ed3cc307927ea65b3df
+    dockerPull: quay.io/ncigdc/multi_mpileup:69bcf2dacd485adbfd16274d76689f6b087564e3
 doc: |
   Multithreading on samtools mpileup function.
 
@@ -59,4 +59,4 @@ outputs:
     outputBinding:
       glob: '*.mpileup'
 
-baseCommand: ['python', '/opt/multi_samtools_mpileup.py']
+baseCommand: ['python3.7', '/opt/multi_samtools_mpileup_p3.py']
