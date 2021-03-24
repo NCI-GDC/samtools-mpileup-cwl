@@ -4,7 +4,7 @@ id: multi_samtools_mpileup
 requirements:
   - class: InlineJavascriptRequirement
   - class: DockerRequirement
-    dockerPull: quay.io/ncigdc/samtools-mpileup-tool:1.0.0-21.7d899dc
+    dockerPull: quay.io/ncigdc/samtools-mpileup-tool:1.0.0-12.5a09e72
 doc: |
   Multithreading on samtools mpileup function.
 
@@ -52,6 +52,11 @@ inputs:
       position: 5
       prefix: -c
 
+  timeout:
+    type: int?
+    inputBinding:
+      position: 99
+      prefix: --timeout
 outputs:
   output_file:
     type: File[]
