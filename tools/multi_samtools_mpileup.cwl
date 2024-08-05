@@ -5,6 +5,11 @@ requirements:
   - class: InlineJavascriptRequirement
   - class: DockerRequirement
     dockerPull: docker.osdc.io/ncigdc/samtools-mpileup-tool:1.0.0-12.5a09e72
+  - class: ResourceRequirement
+    coresMin: 1
+    coresMax: $(inputs.thread_count)
+    ramMin: 5000
+    ramMax: 5000
 doc: |
   Multithreading on samtools mpileup function.
 
