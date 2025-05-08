@@ -8,8 +8,8 @@ requirements:
   - class: ResourceRequirement
     coresMin: 1
     coresMax: $(inputs.thread_count)
-    ramMin: 5000
-    ramMax: 5000
+    ramMin: $(Math.ceil (inputs.thread_count * 3000 ))
+    ramMax: $(Math.ceil (inputs.thread_count * 3000 ))
 doc: |
   Multithreading on samtools mpileup function.
 
