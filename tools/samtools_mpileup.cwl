@@ -6,7 +6,11 @@ requirements:
   - class: InlineJavascriptRequirement
   - class: ShellCommandRequirement
   - class: DockerRequirement
-    dockerPull: quay.io/ncigdc/samtools:1.1
+    dockerPull: docker.osdc.io/ncigdc/samtools:1.1
+  - class: ResourceRequirement
+    coresMin: 1
+    ramMin: 8000
+    ramMax: 8000
 doc: |
   samtools mpileup
 
